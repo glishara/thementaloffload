@@ -103,6 +103,74 @@ a {
   margin: 0;
 }
 
-.app-list li {
-  padding: 0.35rem 0;
+.app-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 0.75rem 0;
+}
+
+.app-item + .app-item {
+  border-top: 1px solid var(--border);
+}
+
+.app-icon {
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+.app-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-name {
+  margin: 0;
+}
+
+.app-stores {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+}
+
+.app-stores a + .coming-soon::before,
+.store-links .coming-soon::before {
+  content: "·";
+  margin: 0 0.35rem;
+  color: var(--muted);
+}
+
+.coming-soon {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.app-detail {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin: 1rem 0 1.5rem;
+}
+
+.app-detail h2 {
+  margin-top: 0;
+}
+
+.app-detail p {
+  margin: 0.25rem 0 0;
+}
+
+.tagline {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.store-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.store-links li {
+  padding: 0.25rem 0;
 }
